@@ -1,0 +1,72 @@
+root {
+	display: block;
+}
+
+.root {
+	-fx-background-image: url("RossaBlu.png");
+	-fx-background-size: stretch;
+}
+
+.text {
+	-fx-font-size: 12px;
+	-fx-font-family: "Arial Narrow";
+	-fx-fill: #000000;
+	-fx-alignment: center;
+}
+
+
+#Morpheus {
+	-fx-fill: #00ff00;
+	-fx-font-size: 20px;
+	-fx-background-color: #ff0000;
+}
+
+.button {
+	-fx-text-fill: black;
+	-fx-font-family: "Arial Narrow";
+	-fx-font-weight: bold;
+	-fx-background-color:
+		linear-gradient(#ff0000, #ff8080),
+		radial-gradient(center 50% -40%, radius 200%, #ff0000 45%, #ff8080 50%);
+	-fx-background-radius: 6, 5;
+	-fx-background-insets: 0, 1;
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover{
+	-fx-background-color: linear-gradient(#80ff80, #80ff80);
+}
+
+.button:pressed{
+	-fx-background-color: linear-gradient(#80ff80, #00ff00);
+}
+
+#enter {
+	-fx-background-color:
+		linear-gradient(#ff0000, #ff8080),
+		radial-gradient(center 50% -40%, radius 200%, #ff0000 45%, #ff8080 50%);
+}
+
+#enter:hover{
+	-fx-background-color: linear-gradient(#80ff80, #80ff80);
+}
+
+#enter:pressed{
+	-fx-background-color: linear-gradient(#80ff80, #00ff00);
+}
+
+
+#exit {
+	-fx-background-color:
+		linear-gradient(#0000ff, #8080ff),
+		radial-gradient(center 50% -40%, radius 200%, #0000ff 45%, #8080ff 50%);
+}
+
+#exit:hover{
+	-fx-background-color: linear-gradient(#80ff80, #80ff80);
+}
+
+#exit:pressed{
+	-fx-background-color: linear-gradient(#80ff80, #00ff00);
+}
+

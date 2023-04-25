@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<GridPane fx:controller="ClientThreadLauncher" 
+xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10"
+styleClass="root">
+
+	<padding><Insets top="25" right="25" bottom="25" left="25"/></padding>
+
+	<Text fx:id="Morpheus" text="Posso solo indicarti la soglia, sei tu quello che la deve attraversare" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+	<HBox alignment="bottom_left" GridPane.columnIndex="1" GridPane.rowIndex="1">
+		<Button fx:id="enter" text="Rossa!" onAction="#entra"/>
+	</HBox>
+
+	<HBox alignment="bottom_left" GridPane.columnIndex="0" GridPane.rowIndex="1">
+		<Button fx:id="exit" text="Blu!" onAction="#esci"/>
+	</HBox>
+
+	<stylesheets>
+		<URL value="@readyStyle.css" />
+	</stylesheets>
+</GridPane>

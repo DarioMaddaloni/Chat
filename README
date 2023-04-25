@@ -1,0 +1,47 @@
+a) L'applicazione è stata testata su due macchine distinte:
+	Macchina 1:
+		SO: Linux PC-Dario 5.15.0-58-generic #64-Ubuntu SMP Thu Jan 5 11:43:13 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+		Hardware: 
+			Architecture:           x86_64
+			  CPU op-mode(s):       32-bit, 64-bit
+			  Address sizes:        39 bits physical, 48 bits virtual
+			  Byte Order:           Little Endian
+			CPU(s):                 4
+			  On-line CPU(s) list:  0-3
+			Vendor ID:              GenuineIntel
+			  Model name:           Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
+	Macchina 2:
+		SO: Linux irene-X540NA 5.15.0-56-generic #62-Ubuntu SMP Tue Nov 22 19:54:14 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+		Hardware:
+			Architecture:            x86_64
+			  CPU op-mode(s):        32-bit, 64-bit
+			  Address sizes:         39 bits physical, 48 bits virtual
+			  Byte Order:            Little Endian
+			CPU(s):                  2
+			  On-line CPU(s) list:   0,1
+			Vendor ID:               GenuineIntel
+			  Model name:            Intel(R) Celeron(R) CPU N3350 @ 1.10GHz
+
+b) Seguire i seguenti passi
+	1) Assicurarsi di aver installato correttamente: C e Java
+		Nel nostro caso la versione di java su cui si è lavorato è stato JDK1.8
+	2) Assicurarsi di aver installato correttamente: Bouncy Castle
+		Nel nostro caso la versione di Bouncy Castle su cui si è lavorato è stato bcprov-ext-jdk18on-172
+	3) Aprire il makefile e modificare a dovere l'ultimo comando con il path della propria macchina.
+	4) Assicurarsi di aver dato l'attributo di eseguibile ai due seguenti file: RunServer, RunClient
+		In caso contrario utilizzare il comando: chmod +x Run*
+	5) Si presti attenzione al comando che si utilizza per chiamare la versione 1.8 di Java. Nel caso non fosse javac e java, aprire il makefile e i files RunServer e RunClient e modificare a dovere le compilazioni e le esecuzioni.
+
+c) La chat si basa su un server centrale che gestisce la ricezione e l'invio dei messaggi. Di conseguenza dovremo inizialmente attivare il server e successivamente potremo accedere come client.
+	1) Per attivare il server sulla propria macchina usare il seguente comando:
+		./RunServer
+		Si noti che il comando esegue anche la compilazione dei files nel caso ancora non fossero stati compilati
+	2) Per accedere come client al server eseguire il seguente comando:
+		./RunClient
+		Si noti che il comando esegue anche la compilazione dei files nel caso ancora non fossero stati compilati
+
+
+
+
+
+

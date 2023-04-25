@@ -1,0 +1,3 @@
+#!/bin/bash
+make
+java8 -Djava.library.path=. ClientThreadLauncher
